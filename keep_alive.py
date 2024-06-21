@@ -7,7 +7,7 @@ def index():
     return "Alive"
 
 def run():
-    app.run(host='0.0.0.0',port=6170)
+    app.run(host='0.0.0.0',port=8888)
 
 def keep_alive():
     t = Thread(target=run)
