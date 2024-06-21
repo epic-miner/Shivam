@@ -5,20 +5,6 @@ import subprocess
 import datetime
 import os
 
-# Define the pip install command for both packages
-pip_command = ['pip', 'install', 'flask', 'telebot']
-
-# Use subprocess to run the command
-process = subprocess.Popen(pip_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-# Capture the output and errors
-output, error = process.communicate()
-
-# Print the output
-if output:
-    print("Output:\n", output.decode())
-if error:
-    print("Error:\n", error.decode())
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
